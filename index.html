@@ -5,12 +5,24 @@
   <title>pouch-todo</title>
   <link rel="stylesheet" href="fontello/fontello.css"/>
   <link rel="stylesheet" href="style.css"/>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
-<body ng-controller="TodoCtrl">
+<body ng-controller="TodoCtrl" class="row">
+<div class="col-md-6 col-md-offset-3">
+  
 
-  <div class="header">
-    <h1>Todos<i class="icon-emo-thumbsup"></i></h1>
+  <div class="header row">
+    <div class="col-md-12 text-center">
+      <h1>Todos<i class="icon-emo-thumbsup"></i></h1>
+    </div>
   </div>
 
   <div class="task" ng-repeat="todo in todos" ng-cloak>
@@ -31,5 +43,6 @@
   <script src="libs/angular.js"></script>
   <script src="libs/pouchdb.min.js"></script>
   <script src="pouch-todo.js"></script>
+  </div>
 </body>
 </html>

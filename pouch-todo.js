@@ -6,9 +6,9 @@
   app.factory('pouch',  function() {
 
     var db = new PouchDB('ng-pouch');
-    // db.sync('http://x.x.x.x/ng-db', {
-    //   live: true
-    // });
+       db.sync('http://104.236.67.97:5984/ng-db', {
+       live: true
+     });
     return db;
   });
 
