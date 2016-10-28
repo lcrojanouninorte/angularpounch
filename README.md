@@ -1,33 +1,24 @@
 pouch-todo
 ==========
 
-A simple todo-app similar to TodoMVC, using AngularJS and PouchDB to abstract browser storage and potentially sync to CouchDB. This is based on 
-[a blog post](http://www.mircozeiss.com/sync-multiple-angularjs-apps-without-server-via-pouchdb) by [Mirco Zeiss](https://github.com/zemirco). 
-
-The blog post didn't include the full source (HMTL templates), and both AngularJS and PouchDB has been updated after the publication, so there is some differences in used syntax and other refactoring present. In particular, the broadcasting logic of the blog post has been removed, but look at the initial commit if you are interested in that implementation.
+Ejemplo basico de chat o lista de tareas compartidas, Basado en el ejemplo 
+[a blog post](http://www.mircozeiss.com/sync-multiple-angularjs-apps-without-server-via-pouchdb) por [Mirco Zeiss](https://
 
 
-[Try a live demo on GH pages](http://orbitbot.github.io/pouch-todo/)
+[Prueben la versión online en](http://testangular.bitballoon.com/)
 
-<br />
-Requirements
-------------
-
-- a browser that PouchDB supports, see the section Browser Support [here](http://pouchdb.com/learn.html)  
 
 <br />
 Try it out
 ----------
 
-[Try a live demo on GH pages](http://orbitbot.github.io/pouch-todo/), or download this repo and open the index.html file in your browser of choice. It should work without a server, or then use something like the built-in Python webserver:
-
 ```bash
-$ git clone https://github.com/orbitbot/pouch-todo
+$ git clone https://github.com/lcrojanouninorte/angularpounch
 $ cd pouch-todo
 $ python -m SimpleHTTPServer
 ```
 
-- if you want to try out the CouchDB synchronization, uncomment the following lines in ```pouch-todo.js``` and add the correct URL for your CouchDB instance
+- La sección que habilita la sincronización remota es esta:
 
 ```javascript
     var db = new PouchDB('ng-pouch');
@@ -42,8 +33,8 @@ $ python -m SimpleHTTPServer
 Notes
 -----
 
-- the main font is Montserrat, and the icons were generated using [Fontello](http://fontello.com)
-- the used fonts are covered by the Open Fonts License, see information under the licenses subfolder
+- Se agrego bootstrap para el css
+
 
 <br />
 Licence
