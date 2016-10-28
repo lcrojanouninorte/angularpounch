@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
 <head>
@@ -31,14 +33,35 @@
     <i class="icon-cancel" ng-click="remove(todo)"></i>
   </div>
 
-  <input type="text" placeholder="What do you need done?" 
+  <input type="text" placeholder="Que tarea quieres realizar?" 
     ng-model="text" 
     ng-keyup="$event.keyCode == 13 ? submit() : null"></input>
 
+<br>
+<!---
 
-  <div class="footer">
-    <a href="https://github.com/orbitbot/pouch-todo">find me on github</a>
-  </div>
+Ejemplo Con boostrap
+
+-->
+
+<div class="row">
+    <div class="col-md-10">
+        <input type="text"    ng-keyup="$event.keyCode == 13 ? submit() : null" ng-model="text"  class="form-control" placeholder="Tarea" aria-describedby="basic-addon1">
+    </div>
+    <div class=" col-md-2">
+        <button class="btn btn-success " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Enviar
+        </button>
+    </div>
+</div>
+
+<!--
+
+contactenme en
+lcrojano@gmail.com
+
+-->
+
 
   <script src="libs/angular.js"></script>
   <script src="libs/pouchdb.min.js"></script>
